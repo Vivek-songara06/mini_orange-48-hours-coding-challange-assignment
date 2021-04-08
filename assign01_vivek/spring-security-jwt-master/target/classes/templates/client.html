@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset = "ISO-8859-1" />
+  <link href = "css/styles.css" rel = "stylesheet"/>
+  <title>Spring Boot Application</title>
+</head>
+<style>
+  Body {
+    font-family: Calibri, Helvetica, sans-serif;
+    background-color: lightblue;
+  }
+  p {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    margin-left: auto;
+  }
+  h{
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0px;
+    margin-left: 50px;
+    align-content: center;
+    position:relative; left:80px; top:2px;
+  }
+</style>
+</head>
+<body>
+
+<p id="demo"></p>
+
+<body>
+<h1>Client Page </h1>
+<h2>There exist a previous login with same user id</h2>
+<h2>jwt :- [[${jwt}]]</h2>
+<h2>This token will expire on [[${expiry}]]</h2>
+<a href="/login">take me to login</a>
+<!--<form action="addAuthenticationRequest">-->
+<!--  <input type="text" name="username"><br>-->
+<!--  <input type="password" name="password"><br>-->
+<!--  <input type="submit"><br>-->
+<!--</form>-->
+</body>
+</html>

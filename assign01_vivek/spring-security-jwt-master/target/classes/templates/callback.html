@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: lightblue;
+        }
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
+</head>
+<body>
+
+<h2>JWT Token Details</h2>
+<br>
+<h2>Token Passed :- [[${token}]]</h2>
+<table>
+    <tr>
+        <td>Expiry Time</td>
+        <td>[[${timeleft}]]</td>
+    </tr>
+    <tr>
+        <td>IsExpired</td>
+        <td>[[${expired}]]</td>
+    </tr>
+    <tr>
+        <td>User while Auth</td>
+        <td>[[${givenusername}]]</td>
+    </tr>
+    <tr>
+        <td>User Encoded in Token</td>
+        <td>[[${extusername}]]</td>
+    </tr>
+    <tr>
+        <td>Token Verification</td>
+        <td>[[${validate}]]</td>
+    </tr>
+</table>
+<a href="/login">take me to login</a>
+</body>
+</html>
+
